@@ -45,7 +45,7 @@ export default function Layout() {
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-950 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-sky-500"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#0ea5e9]"></div>
       </div>
     );
   }
@@ -64,7 +64,7 @@ export default function Layout() {
             <div className="flex items-center">
               <button
                 onClick={() => navigate("/")}
-                className="text-2xl font-bold text-sky-500 hover:text-sky-400 transition-colors"
+                className="text-2xl font-bold text-[#0ea5e9] hover:text-[#0ea5e9]/80 transition-colors"
               >
                 TaskForge
               </button>
@@ -78,7 +78,7 @@ export default function Layout() {
                   onClick={() => navigate(item.path)}
                   className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
                     isActive(item.path)
-                      ? "bg-sky-500/10 text-sky-500"
+                      ? "bg-[#0ea5e9]/10 text-[#0ea5e9]"
                       : "text-gray-400 hover:text-gray-100 hover:bg-gray-800"
                   }`}
                 >
@@ -130,7 +130,7 @@ export default function Layout() {
                   }}
                   className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
                     isActive(item.path)
-                      ? "bg-sky-500/10 text-sky-500"
+                      ? "bg-[#0ea5e9]/10 text-[#0ea5e9]"
                       : "text-gray-400 hover:text-gray-100 hover:bg-gray-800"
                   }`}
                 >
